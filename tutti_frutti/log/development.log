@@ -1,0 +1,1002 @@
+
+
+Started GET "/fruits.json" for 127.0.0.1 at 2013-01-16 13:17:48 -0300
+Processing by FruitsController#index as JSON
+Completed 200 OK in 90ms (Views: 14.6ms)
+
+
+Started GET "/fruits" for 127.0.0.1 at 2013-01-16 13:17:53 -0300
+Processing by FruitsController#index as */*
+  Parameters: {"fruit"=>{"action"=>"index", "controller"=>"fruits"}}
+Completed 200 OK in 16ms (Views: 14.1ms)
+
+
+Started GET "/fruits" for 127.0.0.1 at 2013-01-16 13:18:10 -0300
+Processing by FruitsController#index as */*
+  Parameters: {"fruit"=>{"action"=>"index", "controller"=>"fruits"}}
+Completed 200 OK in 19ms (Views: 17.4ms)
+
+
+Started GET "/fruits" for 127.0.0.1 at 2013-01-16 13:22:14 -0300
+Processing by FruitsController#index as */*
+  Parameters: {"fruit"=>{"action"=>"index", "controller"=>"fruits"}}
+Completed 200 OK in 19ms (Views: 16.3ms)
+
+
+Started GET "/fruits.json" for 127.0.0.1 at 2013-01-16 13:22:17 -0300
+Processing by FruitsController#index as JSON
+Completed 200 OK in 21ms (Views: 19.1ms)
+
+
+Started GET "/bills.json" for 127.0.0.1 at 2013-01-16 13:22:27 -0300
+
+ActionController::RoutingError (No route matches [GET] "/bills.json"):
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:26:in `call_app'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:16:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+  vendor/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/static.rb:62:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/engine.rb:479:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/application.rb:220:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/log_tailer.rb:14:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (12.5ms)
+
+
+Started GET "/fruits.json" for 127.0.0.1 at 2013-01-16 14:49:04 -0300
+Processing by FruitsController#index as JSON
+Completed 200 OK in 17ms (Views: 15.0ms)
+
+
+Started GET "/fruits" for 127.0.0.1 at 2013-01-16 14:49:08 -0300
+Processing by FruitsController#index as */*
+  Parameters: {"fruit"=>{"action"=>"index", "controller"=>"fruits"}}
+Completed 200 OK in 19ms (Views: 17.0ms)
+
+
+Started GET "/fruits" for 127.0.0.1 at 2013-01-16 14:50:21 -0300
+Processing by FruitsController#index as */*
+  Parameters: {"fruit"=>{"action"=>"index", "controller"=>"fruits"}}
+Completed 200 OK in 20ms (Views: 17.9ms)
+
+
+Started GET "/fruits/1" for 127.0.0.1 at 2013-01-16 14:58:03 -0300
+Processing by FruitsController#show as */*
+  Parameters: {"id"=>"1", "fruit"=>{"action"=>"show", "controller"=>"fruits", "id"=>"1"}}
+Completed 200 OK in 3ms (Views: 1.2ms)
+
+
+Started GET "/fruits/2" for 127.0.0.1 at 2013-01-16 14:58:06 -0300
+Processing by FruitsController#show as */*
+  Parameters: {"id"=>"2", "fruit"=>{"action"=>"show", "controller"=>"fruits", "id"=>"2"}}
+Completed 200 OK in 3ms (Views: 1.4ms)
+
+
+Started GET "/fruits" for 127.0.0.1 at 2013-01-16 14:59:21 -0300
+Processing by FruitsController#index as */*
+  Parameters: {"fruit"=>{"action"=>"index", "controller"=>"fruits"}}
+Completed 200 OK in 23ms (Views: 21.6ms)
+
+
+Started GET "/fruits/2" for 127.0.0.1 at 2013-01-16 14:59:24 -0300
+Processing by FruitsController#show as */*
+  Parameters: {"id"=>"2", "fruit"=>{"action"=>"show", "controller"=>"fruits", "id"=>"2"}}
+Completed 200 OK in 3ms (Views: 1.2ms)
+
+
+Started GET "/fruits/3" for 127.0.0.1 at 2013-01-16 14:59:29 -0300
+Processing by FruitsController#show as */*
+  Parameters: {"id"=>"3", "fruit"=>{"action"=>"show", "controller"=>"fruits", "id"=>"3"}}
+Completed 200 OK in 3ms (Views: 1.3ms)
+
+
+Started GET "/fruits/1" for 127.0.0.1 at 2013-01-16 14:59:32 -0300
+Processing by FruitsController#show as */*
+  Parameters: {"id"=>"1", "fruit"=>{"action"=>"show", "controller"=>"fruits", "id"=>"1"}}
+Completed 200 OK in 3ms (Views: 1.4ms)
+
+
+Started GET "/fruits" for 127.0.0.1 at 2013-01-16 14:59:56 -0300
+Processing by FruitsController#index as */*
+  Parameters: {"fruit"=>{"action"=>"index", "controller"=>"fruits"}}
+Completed 200 OK in 91ms (Views: 14.3ms)
+
+
+Started GET "/fruits/1" for 127.0.0.1 at 2013-01-16 14:59:59 -0300
+Processing by FruitsController#show as */*
+  Parameters: {"id"=>"1", "fruit"=>{"action"=>"show", "controller"=>"fruits", "id"=>"1"}}
+Completed 200 OK in 3ms (Views: 1.3ms)
+
+
+Started GET "/fruits/1" for 127.0.0.1 at 2013-01-16 15:00:08 -0300
+Processing by FruitsController#show as */*
+  Parameters: {"id"=>"1", "fruit"=>{"action"=>"show", "controller"=>"fruits", "id"=>"1"}}
+Completed 200 OK in 4ms (Views: 1.9ms)
+
+
+Started GET "/fruits" for 127.0.0.1 at 2013-01-16 15:01:14 -0300
+Processing by FruitsController#index as */*
+  Parameters: {"fruit"=>{"action"=>"index", "controller"=>"fruits"}}
+Completed 200 OK in 16ms (Views: 14.2ms)
+
+
+Started GET "/fruits/1" for 127.0.0.1 at 2013-01-16 15:01:15 -0300
+Processing by FruitsController#show as */*
+  Parameters: {"id"=>"1", "fruit"=>{"action"=>"show", "controller"=>"fruits", "id"=>"1"}}
+Completed 200 OK in 3ms (Views: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-01-16 15:21:43 -0300
+Processing by FruitsController#index as HTML
+Completed 406 Not Acceptable in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-01-16 15:25:14 -0300
+Processing by FruitsController#index as XML
+Completed 200 OK in 64ms (Views: 14.6ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2013-01-16 15:25:33 -0300
+
+ActionController::RoutingError (No route matches [GET] "/index"):
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:26:in `call_app'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:16:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+  vendor/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/static.rb:62:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/engine.rb:479:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/application.rb:220:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/log_tailer.rb:14:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (5.7ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2013-01-16 15:25:43 -0300
+
+ActionController::RoutingError (No route matches [GET] "/index"):
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:26:in `call_app'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:16:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+  vendor/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/static.rb:62:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/engine.rb:479:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/application.rb:220:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/log_tailer.rb:14:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.5ms)
+
+
+Started GET "/index.html" for 127.0.0.1 at 2013-01-16 15:25:59 -0300
+
+ActionController::RoutingError (No route matches [GET] "/index.html"):
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:26:in `call_app'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:16:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+  vendor/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/static.rb:62:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/engine.rb:479:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/application.rb:220:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/log_tailer.rb:14:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/index" for 127.0.0.1 at 2013-01-16 15:26:55 -0300
+
+ActionController::RoutingError (No route matches [GET] "/index"):
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:26:in `call_app'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:16:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+  vendor/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/static.rb:62:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/engine.rb:479:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/application.rb:220:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/log_tailer.rb:14:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/index.html" for 127.0.0.1 at 2013-01-16 15:26:59 -0300
+
+ActionController::RoutingError (No route matches [GET] "/index.html"):
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:26:in `call_app'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:16:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+  vendor/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/static.rb:62:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/engine.rb:479:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/application.rb:220:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/log_tailer.rb:14:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/i" for 127.0.0.1 at 2013-01-16 15:27:30 -0300
+
+SyntaxError (/home/maugsbur/workspaceFCI/roar_example/tutti_frutti/config/routes.rb:54: syntax error, unexpected ':', expecting keyword_end
+  'i' :to => 'fruits#index'
+       ^):
+  vendor/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/dependencies.rb:245:in `load'
+  vendor/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/dependencies.rb:245:in `block in load'
+  vendor/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/dependencies.rb:236:in `load_dependency'
+  vendor/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/dependencies.rb:245:in `load'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/application/routes_reloader.rb:40:in `block in load_paths'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/application/routes_reloader.rb:40:in `each'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/application/routes_reloader.rb:40:in `load_paths'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/application/routes_reloader.rb:16:in `reload!'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/application/routes_reloader.rb:26:in `block in updater'
+  vendor/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/file_update_checker.rb:78:in `call'
+  vendor/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/file_update_checker.rb:78:in `execute'
+  vendor/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/file_update_checker.rb:86:in `execute_if_updated'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/application/routes_reloader.rb:7:in `execute_if_updated'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/application/finisher.rb:68:in `block (2 levels) in <module:Finisher>'
+  vendor/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:429:in `_run__4098243969986910457__prepare__4431173647415035582__callbacks'
+  vendor/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `__run_callback'
+  vendor/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:385:in `_run_prepare_callbacks'
+  vendor/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/reloader.rb:74:in `prepare!'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/reloader.rb:64:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:26:in `call_app'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:16:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+  vendor/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/static.rb:62:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/engine.rb:479:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/application.rb:220:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/log_tailer.rb:14:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (7.1ms)
+  Rendered vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.0ms)
+  Rendered vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (23.3ms)
+
+
+Started GET "/in" for 127.0.0.1 at 2013-01-16 15:27:35 -0300
+
+ActionController::RoutingError (No route matches [GET] "/in"):
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:26:in `call_app'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:16:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+  vendor/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/static.rb:62:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/engine.rb:479:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/application.rb:220:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/log_tailer.rb:14:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/i" for 127.0.0.1 at 2013-01-16 15:27:37 -0300
+
+ActionController::RoutingError (No route matches [GET] "/i"):
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:26:in `call_app'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:16:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+  vendor/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/static.rb:62:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/engine.rb:479:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/application.rb:220:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/log_tailer.rb:14:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/i" for 127.0.0.1 at 2013-01-16 15:27:39 -0300
+
+ActionController::RoutingError (No route matches [GET] "/i"):
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:26:in `call_app'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:16:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+  vendor/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/static.rb:62:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/engine.rb:479:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/application.rb:220:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/log_tailer.rb:14:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/i" for 127.0.0.1 at 2013-01-16 15:27:41 -0300
+
+ActionController::RoutingError (No route matches [GET] "/i"):
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:26:in `call_app'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:16:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+  vendor/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/static.rb:62:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/engine.rb:479:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/application.rb:220:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/log_tailer.rb:14:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/i" for 127.0.0.1 at 2013-01-16 15:29:34 -0300
+Processing by FruitsController#index as HTML
+Completed 406 Not Acceptable in 1ms
+
+
+Started GET "/i" for 127.0.0.1 at 2013-01-16 15:29:43 -0300
+Processing by FruitsController#index as HTML
+Completed 406 Not Acceptable in 1ms
+
+
+Started GET "/i" for 127.0.0.1 at 2013-01-16 15:29:51 -0300
+Processing by FruitsController#index as XML
+Completed 200 OK in 79ms (Views: 14.3ms)
+
+
+Started GET "/show/1" for 127.0.0.1 at 2013-01-16 15:31:35 -0300
+Processing by FruitsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 406 Not Acceptable in 1ms
+
+
+Started GET "/sho/1" for 127.0.0.1 at 2013-01-16 15:31:41 -0300
+
+ActionController::RoutingError (No route matches [GET] "/sho/1"):
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:26:in `call_app'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:16:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+  vendor/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/static.rb:62:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/engine.rb:479:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/application.rb:220:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/log_tailer.rb:14:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (35.9ms)
+
+
+Started GET "/show" for 127.0.0.1 at 2013-01-16 15:31:47 -0300
+
+ActionController::RoutingError (No route matches [GET] "/show"):
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:26:in `call_app'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:16:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+  vendor/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/static.rb:62:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/engine.rb:479:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/application.rb:220:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/log_tailer.rb:14:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/show/1" for 127.0.0.1 at 2013-01-16 15:31:51 -0300
+Processing by FruitsController#show as XML
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 4ms (Views: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-01-17 11:20:08 -0300
+Processing by FruitsController#index as HTML
+Completed 406 Not Acceptable in 1ms
+
+
+Started GET "/show/1" for 127.0.0.1 at 2013-01-17 11:20:16 -0300
+Processing by FruitsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 406 Not Acceptable in 1ms
+
+
+Started GET "/fruits.json" for 127.0.0.1 at 2013-01-17 11:20:26 -0300
+Processing by FruitsController#index as JSON
+Completed 200 OK in 234ms (Views: 14.7ms)
+
+
+Started GET "/fruits" for 127.0.0.1 at 2013-01-17 11:21:07 -0300
+Processing by FruitsController#index as */*
+  Parameters: {"fruit"=>{"action"=>"index", "controller"=>"fruits"}}
+Completed 200 OK in 17ms (Views: 15.4ms)
+
+
+Started GET "/fruits/1" for 127.0.0.1 at 2013-01-17 11:21:10 -0300
+Processing by FruitsController#show as */*
+  Parameters: {"id"=>"1", "fruit"=>{"action"=>"show", "controller"=>"fruits", "id"=>"1"}}
+Completed 200 OK in 3ms (Views: 1.7ms)
+
+
+Started GET "/fruits/2" for 127.0.0.1 at 2013-01-17 11:21:14 -0300
+Processing by FruitsController#show as */*
+  Parameters: {"id"=>"2", "fruit"=>{"action"=>"show", "controller"=>"fruits", "id"=>"2"}}
+Completed 200 OK in 3ms (Views: 1.3ms)
+
+
+Started GET "/fruits.json" for 127.0.0.1 at 2013-01-17 12:18:10 -0300
+Processing by FruitsController#index as JSON
+Completed 500 Internal Server Error in 1ms
+
+RuntimeError (fruit repository is not registered):
+  app/controllers/fruits_controller.rb:9:in `index'
+
+
+  Rendered vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.6ms)
+  Rendered vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (1.7ms)
+  Rendered vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (45.8ms)
+
+
+Started GET "/fruits.json" for 127.0.0.1 at 2013-01-17 12:21:42 -0300
+Processing by FruitsController#index as JSON
+Completed 200 OK in 55ms (Views: 0.6ms)
+
+
+Started GET "/fruits.json" for 127.0.0.1 at 2013-01-17 12:21:45 -0300
+Processing by FruitsController#index as JSON
+Completed 200 OK in 2ms (Views: 0.4ms)
+
+
+Started GET "/fruits.json" for 127.0.0.1 at 2013-01-17 12:22:02 -0300
+Processing by FruitsController#index as JSON
+Completed 200 OK in 2ms (Views: 0.4ms)
+
+
+Started GET "/fruits.json" for 127.0.0.1 at 2013-01-17 12:22:16 -0300
+Processing by FruitsController#index as JSON
+Completed 200 OK in 86ms (Views: 14.6ms)
+
+
+Started GET "/bills.json" for 127.0.0.1 at 2013-01-17 12:22:24 -0300
+
+ActionController::RoutingError (No route matches [GET] "/bills.json"):
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:26:in `call_app'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:16:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+  vendor/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/static.rb:62:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/engine.rb:479:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/application.rb:220:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/log_tailer.rb:14:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (5.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-01-17 12:24:35 -0300
+Processing by FruitsController#index as HTML
+Completed 406 Not Acceptable in 1ms
+
+
+Started GET "/fruits.json" for 127.0.0.1 at 2013-01-17 12:25:14 -0300
+Processing by FruitsController#index as JSON
+Completed 200 OK in 80ms (Views: 23.1ms)
+
+
+Started GET "/bills.json" for 127.0.0.1 at 2013-01-17 12:25:27 -0300
+
+ActionController::RoutingError (No route matches [GET] "/bills.json"):
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:26:in `call_app'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:16:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+  vendor/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/static.rb:62:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/engine.rb:479:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/application.rb:220:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/log_tailer.rb:14:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (11.0ms)
+
+
+Started GET "/fruits" for 127.0.0.1 at 2013-01-17 12:36:23 -0300
+Processing by FruitsController#index as HTML
+Completed 406 Not Acceptable in 1ms
+
+
+Started GET "/fruits" for 127.0.0.1 at 2013-01-17 12:36:58 -0300
+Processing by FruitsController#index as HTML
+Completed 406 Not Acceptable in 1ms
+
+
+Started GET "/fruits" for 127.0.0.1 at 2013-01-17 12:37:22 -0300
+Processing by FruitsController#index as HTML
+Completed 406 Not Acceptable in 1ms
+
+
+Started GET "/fruits" for 127.0.0.1 at 2013-01-17 12:37:23 -0300
+Processing by FruitsController#index as HTML
+Completed 406 Not Acceptable in 1ms
+
+
+Started GET "/fruits" for 127.0.0.1 at 2013-01-17 12:37:24 -0300
+Processing by FruitsController#index as HTML
+Completed 406 Not Acceptable in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-01-17 12:37:36 -0300
+Processing by FruitsController#index as HTML
+Completed 406 Not Acceptable in 0ms
+
+
+Started GET "/show/1" for 127.0.0.1 at 2013-01-17 12:38:22 -0300
+Processing by FruitsController#show as XML
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 51ms (Views: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-01-17 12:38:29 -0300
+Processing by FruitsController#index as XML
+Completed 200 OK in 16ms (Views: 14.1ms)
+
+
+Started GET "/fruits" for 127.0.0.1 at 2013-01-17 12:38:32 -0300
+Processing by FruitsController#index as XML
+Completed 200 OK in 17ms (Views: 15.5ms)
+
+
+Started GET "/fruits" for 127.0.0.1 at 2013-01-17 12:38:56 -0300
+Processing by FruitsController#index as XML
+Completed 200 OK in 86ms (Views: 14.4ms)
+
+
+Started GET "/fruits" for 127.0.0.1 at 2013-01-17 12:38:58 -0300
+Processing by FruitsController#index as XML
+Completed 200 OK in 16ms (Views: 14.1ms)
+
+
+Started GET "/fruits" for 127.0.0.1 at 2013-01-17 12:39:23 -0300
+Processing by FruitsController#index as XML
+Completed 200 OK in 89ms (Views: 14.7ms)
+
+
+Started GET "/fruits" for 127.0.0.1 at 2013-01-17 12:39:23 -0300
+Processing by FruitsController#index as XML
+Completed 200 OK in 16ms (Views: 14.2ms)
+
+
+Started GET "/fruits" for 127.0.0.1 at 2013-01-17 12:39:58 -0300
+Processing by FruitsController#index as XML
+Completed 200 OK in 87ms (Views: 14.5ms)
+
+
+Started GET "/fruits" for 127.0.0.1 at 2013-01-17 12:40:15 -0300
+Processing by FruitsController#index as XML
+Completed 200 OK in 92ms (Views: 16.0ms)
+
+
+Started GET "/fruits" for 127.0.0.1 at 2013-01-17 12:40:16 -0300
+Processing by FruitsController#index as XML
+Completed 200 OK in 16ms (Views: 14.9ms)
+
+
+Started GET "/fruits" for 127.0.0.1 at 2013-01-17 12:40:34 -0300
+Processing by FruitsController#index as XML
+Completed 200 OK in 17ms (Views: 14.2ms)
+
+
+Started GET "/fruits" for 127.0.0.1 at 2013-01-17 12:41:07 -0300
+Processing by FruitsController#index as XML
+Completed 200 OK in 87ms (Views: 14.2ms)
+
+
+Started GET "/bills" for 127.0.0.1 at 2013-01-17 12:41:13 -0300
+
+ActionController::RoutingError (uninitialized constant BillsController):
+  vendor/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/inflector/methods.rb:229:in `block in constantize'
+  vendor/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/inflector/methods.rb:228:in `each'
+  vendor/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/inflector/methods.rb:228:in `constantize'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:32:in `call'
+  vendor/gems/ruby/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+  vendor/gems/ruby/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+  vendor/gems/ruby/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:600:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/etag.rb:23:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/conditionalget.rb:25:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/head.rb:14:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  vendor/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `_run__30525901417406719__call__3809801734317824911__callbacks'
+  vendor/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `__run_callback'
+  vendor/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  vendor/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:26:in `call_app'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:16:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+  vendor/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/static.rb:62:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/engine.rb:479:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/application.rb:220:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/log_tailer.rb:14:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (6.4ms)
+
+
+Started GET "/fruits" for 127.0.0.1 at 2013-01-17 12:41:44 -0300
+Processing by FruitsController#index as XML
+Completed 200 OK in 95ms (Views: 17.3ms)
+
+
+Started GET "/bills" for 127.0.0.1 at 2013-01-17 12:42:00 -0300
+
+ActionController::RoutingError (uninitialized constant BillsController):
+  vendor/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/inflector/methods.rb:229:in `block in constantize'
+  vendor/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/inflector/methods.rb:228:in `each'
+  vendor/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/inflector/methods.rb:228:in `constantize'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:69:in `controller_reference'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:54:in `controller'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:32:in `call'
+  vendor/gems/ruby/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+  vendor/gems/ruby/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+  vendor/gems/ruby/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/routing/route_set.rb:600:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/etag.rb:23:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/conditionalget.rb:25:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/head.rb:14:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  vendor/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `_run__4342377801756158539__call__407213880311440063__callbacks'
+  vendor/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:405:in `__run_callback'
+  vendor/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  vendor/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/callbacks.rb:81:in `run_callbacks'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:26:in `call_app'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:16:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+  vendor/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/static.rb:62:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/engine.rb:479:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/application.rb:220:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/log_tailer.rb:14:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (5.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2013-01-17 15:55:31 -0300
+Processing by FruitsController#index as HTML
+Completed 406 Not Acceptable in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2013-01-21 12:36:09 -0300
+
+ActionController::RoutingError (No route matches [GET] "/"):
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:26:in `call_app'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/logger.rb:16:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+  vendor/gems/ruby/1.9.1/gems/activesupport-3.2.3/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+  vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/static.rb:62:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/engine.rb:479:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/application.rb:220:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+  vendor/gems/ruby/1.9.1/gems/railties-3.2.3/lib/rails/rack/log_tailer.rb:14:in `call'
+  vendor/gems/ruby/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered vendor/gems/ruby/1.9.1/gems/actionpack-3.2.3/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (10.3ms)
+
+
+Started GET "/bills" for 127.0.0.1 at 2013-01-21 12:36:43 -0300
+Processing by BillsController#index as HTML
+Completed 406 Not Acceptable in 0ms
+
+
+Started GET "/bills" for 127.0.0.1 at 2013-01-21 12:37:59 -0300
+Processing by BillsController#index as XML
+Completed 200 OK in 28ms (Views: 0.3ms)
+
+
+Started GET "/fruits" for 127.0.0.1 at 2013-01-21 12:39:11 -0300
+Processing by FruitsController#index as XML
+Completed 200 OK in 8ms (Views: 6.7ms)
+
+
+Started GET "/bills" for 127.0.0.1 at 2013-01-21 12:39:38 -0300
+Processing by BillsController#index as XML
+Completed 200 OK in 47ms (Views: 0.3ms)
+
+
+Started GET "/bills" for 127.0.0.1 at 2013-01-21 12:40:01 -0300
+Processing by BillsController#index as XML
+Completed 200 OK in 48ms (Views: 0.3ms)
+
+
+Started GET "/fruits" for 127.0.0.1 at 2013-01-21 12:40:09 -0300
+Processing by FruitsController#index as XML
+Completed 200 OK in 8ms (Views: 7.1ms)
+
+
+Started GET "/bills" for 127.0.0.1 at 2013-01-21 12:41:21 -0300
+Processing by BillsController#index as XML
+Completed 200 OK in 47ms (Views: 0.3ms)
+
+
+Started GET "/fruits" for 127.0.0.1 at 2013-01-21 12:41:23 -0300
+Processing by FruitsController#index as XML
+Completed 200 OK in 9ms (Views: 7.4ms)
+
+
+Started GET "/fruits" for 127.0.0.1 at 2013-01-21 12:47:36 -0300
+Processing by FruitsController#index as XML
+Completed 200 OK in 54ms (Views: 6.9ms)
+
+
+Started GET "/bills" for 127.0.0.1 at 2013-01-21 12:47:39 -0300
+Processing by BillsController#index as XML
+Completed 200 OK in 2ms (Views: 0.3ms)
+
+
+Started GET "/bills" for 127.0.0.1 at 2013-01-21 12:58:31 -0300
+Processing by BillsController#index as XML
+Completed 200 OK in 55ms (Views: 6.9ms)
+
+
+Started GET "/fruits" for 127.0.0.1 at 2013-01-21 13:36:35 -0300
+Processing by FruitsController#index as */*
+  Parameters: {"fruit"=>{"action"=>"index", "controller"=>"fruits"}}
+Completed 200 OK in 8ms (Views: 6.4ms)
+
+
+Started GET "/bills" for 127.0.0.1 at 2013-01-21 13:36:39 -0300
+Processing by BillsController#index as */*
+  Parameters: {"bill"=>{"action"=>"index", "controller"=>"bills"}}
+Completed 200 OK in 13ms (Views: 11.6ms)
+
+
+Started GET "/bills" for 127.0.0.1 at 2013-01-21 13:37:02 -0300
+Processing by BillsController#index as */*
+  Parameters: {"bill"=>{"action"=>"index", "controller"=>"bills"}}
+Completed 200 OK in 9ms (Views: 7.9ms)
+
+
+Started GET "/fruits" for 127.0.0.1 at 2013-01-21 15:39:41 -0300
+Processing by FruitsController#index as */*
+  Parameters: {"fruit"=>{"action"=>"index", "controller"=>"fruits"}}
+Completed 200 OK in 11ms (Views: 8.9ms)
+
+
+Started GET "/bills" for 127.0.0.1 at 2013-01-21 15:45:17 -0300
+Processing by BillsController#index as */*
+  Parameters: {"bill"=>{"action"=>"index", "controller"=>"bills"}}
+Completed 200 OK in 14ms (Views: 12.1ms)
+
+
+Started GET "/bills" for 127.0.0.1 at 2013-01-21 15:45:43 -0300
+Processing by BillsController#index as */*
+  Parameters: {"bill"=>{"action"=>"index", "controller"=>"bills"}}
+Completed 200 OK in 9ms (Views: 7.8ms)
+
+
+Started GET "/bills" for 127.0.0.1 at 2013-01-21 15:46:01 -0300
+Processing by BillsController#index as */*
+  Parameters: {"bill"=>{"action"=>"index", "controller"=>"bills"}}
+Completed 200 OK in 8ms (Views: 6.8ms)
+
+
+Started GET "/bills" for 127.0.0.1 at 2013-01-21 15:46:09 -0300
+Processing by BillsController#index as */*
+  Parameters: {"bill"=>{"action"=>"index", "controller"=>"bills"}}
+Completed 200 OK in 8ms (Views: 6.8ms)
+
+
+Started GET "/bills" for 127.0.0.1 at 2013-01-21 15:46:20 -0300
+Processing by BillsController#index as */*
+  Parameters: {"bill"=>{"action"=>"index", "controller"=>"bills"}}
+Completed 200 OK in 16ms (Views: 13.4ms)
+
+
+Started GET "/bills" for 127.0.0.1 at 2013-01-21 15:48:04 -0300
+Processing by BillsController#index as */*
+  Parameters: {"bill"=>{"action"=>"index", "controller"=>"bills"}}
+Completed 200 OK in 8ms (Views: 6.8ms)
+
+
+Started GET "/bills" for 127.0.0.1 at 2013-01-21 15:48:14 -0300
+Processing by BillsController#index as */*
+  Parameters: {"bill"=>{"action"=>"index", "controller"=>"bills"}}
+Completed 200 OK in 8ms (Views: 6.8ms)
+
+
+Started GET "/bills" for 127.0.0.1 at 2013-01-21 15:48:28 -0300
+Processing by BillsController#index as */*
+  Parameters: {"bill"=>{"action"=>"index", "controller"=>"bills"}}
+Completed 200 OK in 14ms (Views: 12.8ms)
+
+
+Started GET "/bills" for 127.0.0.1 at 2013-01-21 15:48:54 -0300
+Processing by BillsController#index as */*
+  Parameters: {"bill"=>{"action"=>"index", "controller"=>"bills"}}
+Completed 200 OK in 7ms (Views: 6.5ms)
+
+
+Started GET "/bills" for 127.0.0.1 at 2013-01-21 15:49:48 -0300
+Processing by BillsController#index as */*
+  Parameters: {"bill"=>{"action"=>"index", "controller"=>"bills"}}
+Completed 200 OK in 11ms (Views: 9.6ms)
+
+
+Started GET "/bills" for 127.0.0.1 at 2013-01-21 15:50:55 -0300
+Processing by BillsController#index as */*
+  Parameters: {"bill"=>{"action"=>"index", "controller"=>"bills"}}
+Completed 200 OK in 7ms (Views: 6.4ms)
+
+
+Started GET "/bills" for 127.0.0.1 at 2013-01-21 15:51:45 -0300
+Processing by BillsController#index as */*
+  Parameters: {"bill"=>{"action"=>"index", "controller"=>"bills"}}
+Completed 200 OK in 8ms (Views: 6.8ms)
+
+
+Started GET "/bills" for 127.0.0.1 at 2013-01-21 15:51:56 -0300
+Processing by BillsController#index as */*
+  Parameters: {"bill"=>{"action"=>"index", "controller"=>"bills"}}
+Completed 200 OK in 8ms (Views: 6.8ms)

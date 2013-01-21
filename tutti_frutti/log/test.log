@@ -1,0 +1,269 @@
+Processing by FruitsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 85ms (Views: 1.5ms)
+Processing by FruitsController#index as JSON
+Completed 200 OK in 4ms (Views: 2.5ms)
+Processing by FruitsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 84ms (Views: 1.5ms)
+Processing by FruitsController#index as JSON
+Completed 200 OK in 4ms (Views: 2.4ms)
+Processing by FruitsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 55ms (Views: 0.9ms)
+Processing by FruitsController#index as JSON
+Completed 200 OK in 2ms (Views: 1.4ms)
+Processing by FruitsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 72ms (Views: 1.5ms)
+Processing by FruitsController#index as JSON
+Completed 200 OK in 4ms (Views: 2.6ms)
+Processing by FruitsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 58ms (Views: 1.5ms)
+Processing by FruitsController#index as JSON
+Completed 200 OK in 4ms (Views: 2.3ms)
+Processing by FruitsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 59ms (Views: 1.5ms)
+Processing by FruitsController#index as JSON
+Completed 200 OK in 4ms (Views: 2.5ms)
+Processing by BillsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms
+Processing by FruitsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 63ms (Views: 1.5ms)
+Processing by FruitsController#index as JSON
+Completed 200 OK in 4ms (Views: 2.4ms)
+Processing by BillsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms
+Processing by FruitsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 77ms (Views: 2.3ms)
+Processing by FruitsController#index as JSON
+Completed 200 OK in 5ms (Views: 2.9ms)
+Processing by BillsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms
+Processing by FruitsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 66ms (Views: 1.5ms)
+Processing by FruitsController#index as JSON
+Completed 200 OK in 4ms (Views: 2.4ms)
+Processing by BillsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms
+Processing by FruitsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 54ms (Views: 0.9ms)
+Processing by FruitsController#index as JSON
+Completed 200 OK in 2ms (Views: 1.3ms)
+Processing by BillsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms
+Processing by FruitsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 38ms (Views: 1.0ms)
+Processing by FruitsController#index as JSON
+Completed 200 OK in 2ms (Views: 1.2ms)
+Processing by BillsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 0ms
+Processing by FruitsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 39ms (Views: 0.9ms)
+Processing by FruitsController#index as JSON
+Completed 200 OK in 2ms (Views: 1.3ms)
+Processing by BillsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 0ms
+Processing by FruitsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 59ms (Views: 0.9ms)
+Processing by FruitsController#index as JSON
+Completed 200 OK in 2ms (Views: 1.2ms)
+Processing by BillsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms
+Processing by FruitsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 43ms (Views: 0.9ms)
+Processing by FruitsController#index as JSON
+Completed 200 OK in 2ms (Views: 1.1ms)
+Processing by BillsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms
+Processing by FruitsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 38ms (Views: 0.9ms)
+Processing by FruitsController#index as JSON
+Completed 200 OK in 2ms (Views: 1.1ms)
+Processing by BillsController#show as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 0ms
+Processing by FruitsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 44ms (Views: 0.9ms)
+Processing by FruitsController#index as JSON
+Completed 200 OK in 2ms (Views: 1.3ms)
+Processing by BillsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 0ms
+Processing by FruitsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 44ms (Views: 1.2ms)
+Processing by FruitsController#index as JSON
+Completed 200 OK in 2ms (Views: 1.3ms)
+Processing by FruitsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 38ms (Views: 0.9ms)
+Processing by FruitsController#index as JSON
+Completed 200 OK in 2ms (Views: 1.2ms)
+Processing by BillsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 0ms
+Processing by FruitsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 41ms (Views: 0.9ms)
+Processing by FruitsController#index as JSON
+Completed 200 OK in 2ms (Views: 1.3ms)
+Processing by BillsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 0ms
+Processing by FruitsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 44ms (Views: 0.9ms)
+Processing by FruitsController#index as JSON
+Completed 200 OK in 2ms (Views: 1.3ms)
+Processing by BillsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 1ms
+Processing by FruitsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 59ms (Views: 0.8ms)
+Processing by FruitsController#index as JSON
+Completed 200 OK in 2ms (Views: 1.1ms)
+Processing by BillsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 39ms (Views: 0.2ms)
+Processing by FruitsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 2ms (Views: 0.7ms)
+Processing by FruitsController#index as JSON
+Completed 200 OK in 2ms (Views: 1.1ms)
+Processing by BillsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 46ms (Views: 0.2ms)
+Processing by FruitsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 2ms (Views: 0.8ms)
+Processing by FruitsController#index as JSON
+Completed 200 OK in 2ms (Views: 1.2ms)
+Processing by BillsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 39ms (Views: 1.1ms)
+Processing by FruitsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 3ms (Views: 0.8ms)
+Processing by FruitsController#index as JSON
+Completed 200 OK in 2ms (Views: 1.3ms)
+Processing by BillsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 37ms (Views: 0.9ms)
+Processing by FruitsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 2ms (Views: 0.7ms)
+Processing by FruitsController#index as JSON
+Completed 200 OK in 2ms (Views: 1.1ms)
+Processing by BillsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 55ms (Views: 1.5ms)
+Processing by FruitsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 2ms (Views: 0.7ms)
+Processing by FruitsController#index as JSON
+Completed 200 OK in 2ms (Views: 1.1ms)
+Processing by BillsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 39ms (Views: 0.9ms)
+Processing by FruitsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 2ms (Views: 0.6ms)
+Processing by FruitsController#index as JSON
+Completed 200 OK in 2ms (Views: 1.1ms)
+Processing by BillsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 38ms (Views: 0.9ms)
+Processing by FruitsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 2ms (Views: 0.6ms)
+Processing by FruitsController#index as JSON
+Completed 200 OK in 2ms (Views: 1.1ms)
+Processing by BillsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 37ms (Views: 0.9ms)
+Processing by FruitsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 2ms (Views: 0.6ms)
+Processing by FruitsController#index as JSON
+Completed 200 OK in 2ms (Views: 1.2ms)
+Processing by BillsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 42ms (Views: 1.4ms)
+Processing by FruitsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 3ms (Views: 1.1ms)
+Processing by FruitsController#index as JSON
+Completed 200 OK in 3ms (Views: 2.1ms)
+Processing by BillsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 40ms (Views: 0.8ms)
+Processing by BillsController#index as JSON
+Completed 200 OK in 2ms (Views: 1.2ms)
+Processing by FruitsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 2ms (Views: 0.7ms)
+Processing by FruitsController#index as JSON
+Completed 200 OK in 3ms (Views: 1.4ms)
+Processing by BillsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 37ms (Views: 0.8ms)
+Processing by BillsController#index as JSON
+Completed 200 OK in 2ms (Views: 1.4ms)
+Processing by FruitsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 2ms (Views: 1.0ms)
+Processing by FruitsController#index as JSON
+Completed 200 OK in 3ms (Views: 1.7ms)
+Processing by BillsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 36ms (Views: 0.8ms)
+Processing by BillsController#index as JSON
+Completed 200 OK in 2ms (Views: 1.1ms)
+Processing by FruitsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 2ms (Views: 0.6ms)
+Processing by FruitsController#index as JSON
+Completed 200 OK in 2ms (Views: 1.2ms)
+Processing by BillsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 38ms (Views: 0.8ms)
+Processing by BillsController#index as JSON
+Completed 200 OK in 2ms (Views: 1.1ms)
+Processing by FruitsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 2ms (Views: 0.6ms)
+Processing by FruitsController#index as JSON
+Completed 200 OK in 2ms (Views: 1.2ms)
+Processing by BillsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 37ms (Views: 0.9ms)
+Processing by BillsController#index as JSON
+Completed 200 OK in 2ms (Views: 1.2ms)
+Processing by FruitsController#show as JSON
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 2ms (Views: 0.6ms)
+Processing by FruitsController#index as JSON
+Completed 200 OK in 2ms (Views: 1.3ms)

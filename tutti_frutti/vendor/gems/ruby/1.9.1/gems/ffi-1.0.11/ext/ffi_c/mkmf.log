@@ -1,0 +1,121 @@
+package configuration for libffi is not found
+have_header: checking for ffi.h... -------------------- no
+
+"gcc -o conftest -I/home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/include/ruby-1.9.1/x86_64-linux -I/home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/include/ruby-1.9.1/ruby/backward -I/home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/include/ruby-1.9.1 -I.    -I/home/maugsbur/.rvm/usr/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration  -fPIC conftest.c  -L. -L/home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib -Wl,-R/home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib -L/home/maugsbur/.rvm/usr/lib -Wl,-R/home/maugsbur/.rvm/usr/lib -L.  -rdynamic -Wl,-export-dynamic -L/home/maugsbur/.rvm/usr/lib  -Wl,-R/home/maugsbur/.rvm/usr/lib      -Wl,-R -Wl,/home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib -L/home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib -lruby  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: int main() {return 0;}
+/* end */
+
+"gcc -E -I/home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/include/ruby-1.9.1/x86_64-linux -I/home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/include/ruby-1.9.1/ruby/backward -I/home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/include/ruby-1.9.1 -I.    -I/home/maugsbur/.rvm/usr/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration  -fPIC  conftest.c -o conftest.i"
+conftest.c:3:17: fatal error: ffi.h: No such file or directory
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ffi.h>
+/* end */
+
+--------------------
+
+find_header: checking for ffi.h in /usr/local/include... -------------------- no
+
+"gcc -E -I/home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/include/ruby-1.9.1/x86_64-linux -I/home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/include/ruby-1.9.1/ruby/backward -I/home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/include/ruby-1.9.1 -I.    -I/home/maugsbur/.rvm/usr/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration  -fPIC  conftest.c -o conftest.i"
+conftest.c:3:17: fatal error: ffi.h: No such file or directory
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ffi.h>
+/* end */
+
+"gcc -E -I/home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/include/ruby-1.9.1/x86_64-linux -I/home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/include/ruby-1.9.1/ruby/backward -I/home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/include/ruby-1.9.1 -I.    -I/home/maugsbur/.rvm/usr/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration  -fPIC -I/usr/local/include conftest.c -o conftest.i"
+conftest.c:3:17: fatal error: ffi.h: No such file or directory
+compilation terminated.
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: #include <ffi.h>
+/* end */
+
+--------------------
+
+have_func: checking for rb_thread_blocking_region()... -------------------- yes
+
+"gcc -o conftest -I/home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/include/ruby-1.9.1/x86_64-linux -I/home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/include/ruby-1.9.1/ruby/backward -I/home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/include/ruby-1.9.1 -I.    -I/home/maugsbur/.rvm/usr/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration  -fPIC conftest.c  -L. -L/home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib -Wl,-R/home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib -L/home/maugsbur/.rvm/usr/lib -Wl,-R/home/maugsbur/.rvm/usr/lib -L.  -rdynamic -Wl,-export-dynamic -L/home/maugsbur/.rvm/usr/lib  -Wl,-R/home/maugsbur/.rvm/usr/lib      -Wl,-R -Wl,/home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib -L/home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib -lruby  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:5:28: warning: variable ‘p’ set but not used [-Wunused-but-set-variable]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))rb_thread_blocking_region; return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for ruby_native_thread_p()... -------------------- yes
+
+"gcc -o conftest -I/home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/include/ruby-1.9.1/x86_64-linux -I/home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/include/ruby-1.9.1/ruby/backward -I/home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/include/ruby-1.9.1 -I.    -I/home/maugsbur/.rvm/usr/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration  -fPIC conftest.c  -L. -L/home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib -Wl,-R/home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib -L/home/maugsbur/.rvm/usr/lib -Wl,-R/home/maugsbur/.rvm/usr/lib -L.  -rdynamic -Wl,-export-dynamic -L/home/maugsbur/.rvm/usr/lib  -Wl,-R/home/maugsbur/.rvm/usr/lib      -Wl,-R -Wl,/home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib -L/home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib -lruby  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:5:28: warning: variable ‘p’ set but not used [-Wunused-but-set-variable]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))ruby_native_thread_p; return 0; }
+/* end */
+
+--------------------
+
+have_func: checking for rb_thread_call_with_gvl()... -------------------- yes
+
+"gcc -o conftest -I/home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/include/ruby-1.9.1/x86_64-linux -I/home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/include/ruby-1.9.1/ruby/backward -I/home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/include/ruby-1.9.1 -I.    -I/home/maugsbur/.rvm/usr/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration  -fPIC conftest.c  -L. -L/home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib -Wl,-R/home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib -L/home/maugsbur/.rvm/usr/lib -Wl,-R/home/maugsbur/.rvm/usr/lib -L.  -rdynamic -Wl,-export-dynamic -L/home/maugsbur/.rvm/usr/lib  -Wl,-R/home/maugsbur/.rvm/usr/lib      -Wl,-R -Wl,/home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib -L/home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib -lruby  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:5:53: error: ‘rb_thread_call_with_gvl’ undeclared (first use in this function)
+conftest.c:5:53: note: each undeclared identifier is reported only once for each function it appears in
+conftest.c:5:28: warning: variable ‘p’ set but not used [-Wunused-but-set-variable]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { void ((*volatile p)()); p = (void ((*)()))rb_thread_call_with_gvl; return 0; }
+/* end */
+
+"gcc -o conftest -I/home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/include/ruby-1.9.1/x86_64-linux -I/home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/include/ruby-1.9.1/ruby/backward -I/home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/include/ruby-1.9.1 -I.    -I/home/maugsbur/.rvm/usr/include  -O3 -ggdb -Wall -Wextra -Wno-unused-parameter -Wno-parentheses -Wno-long-long -Wno-missing-field-initializers -Wpointer-arith -Wwrite-strings -Wdeclaration-after-statement -Wimplicit-function-declaration  -fPIC conftest.c  -L. -L/home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib -Wl,-R/home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib -L/home/maugsbur/.rvm/usr/lib -Wl,-R/home/maugsbur/.rvm/usr/lib -L.  -rdynamic -Wl,-export-dynamic -L/home/maugsbur/.rvm/usr/lib  -Wl,-R/home/maugsbur/.rvm/usr/lib      -Wl,-R -Wl,/home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib -L/home/maugsbur/.rvm/rubies/ruby-1.9.3-p362/lib -lruby  -lpthread -lrt -ldl -lcrypt -lm   -lc"
+conftest.c: In function ‘t’:
+conftest.c:5:1: warning: implicit declaration of function ‘rb_thread_call_with_gvl’ [-Wimplicit-function-declaration]
+checked program was:
+/* begin */
+1: #include "ruby.h"
+2: 
+3: /*top*/
+4: int main() {return 0;}
+5: int t() { rb_thread_call_with_gvl(); return 0; }
+/* end */
+
+--------------------
+
+extconf.h is:
+/* begin */
+1: #ifndef EXTCONF_H
+2: #define EXTCONF_H
+3: #define HAVE_RB_THREAD_BLOCKING_REGION 1
+4: #define HAVE_RUBY_NATIVE_THREAD_P 1
+5: #define HAVE_RB_THREAD_CALL_WITH_GVL 1
+6: #define USE_INTERNAL_LIBFFI 1
+7: #define RUBY_1_9 1
+8: #endif
+/* end */
+

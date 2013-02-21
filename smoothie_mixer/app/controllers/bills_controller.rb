@@ -11,4 +11,8 @@ class BillsController < ApplicationController
   def edit
     @bill = Bill.get(params[:id], 'application/json')
   end
+
+  def search
+    @bills = Bills.get("http://localhost:9292/search", 'application/json').bills
+  end
 end

@@ -1,6 +1,6 @@
 SmoothieMixer::Application.routes.draw do
   resources :fruits
-  # resources :bills
+  resources :bills
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
@@ -53,6 +53,7 @@ SmoothieMixer::Application.routes.draw do
   # just remember to delete public/index.html.
   root :to => 'fruits#index'
   match 'bills' => 'bills#index'
+  match 'search' => 'bills#search'
 
   # See how all your routes lay out with "rake routes"
 

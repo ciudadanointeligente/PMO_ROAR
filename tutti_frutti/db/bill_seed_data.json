@@ -1,19 +1,19 @@
 [
   {"bill":[
-    {"id": "1", "title": "Title 1", "chamber": "Senado"},
-    {"id": "2", "title": "Title 2", "chamber": "C.Diputados"},
-    {"id": "3", "title": "Title 3", "chamber": "Senado"},
-    {"id": "4", "title": "Title 4", "chamber": "C.Diputados"},
-    {"id": "5", "title": "Title 5", "chamber": "Senado"},
-    {"id": "6", "title": "Title 6", "chamber": "Senado"},
-    {"id": "7", "title": "Title 7", "chamber": "C.Diputados"},
-    {"id": "8", "title": "Title 8", "chamber": "Senado"},
-    {"id": "9", "title": "Title 9", "chamber": "Senado"},
-    {"id": "10", "title": "Title 10", "chamber": "C.Diputados"},
-    {"id": "11", "title": "Title 11", "chamber": "C.Diputados"},
-    {"id": "12", "title": "Title 12", "chamber": "Senado"},
-    {"id": "13", "title": "Title 13", "chamber": "Senado"},
-    {"id": "14", "title": "Title 14", "chamber": "C.Diputados"},
-    {"id": "15", "title": "Title 15", "chamber": "Senado"}
+    {"uid": "1", "title": "Title 1", "origin_chamber": "Senado"},
+    {"uid": "2", "title": "Title 2", "origin_chamber": "C.Diputados"},
+    {"uid": "3", "title": "Title 3", "origin_chamber": "Senado"},
+    {"uid": "4", "title": "Title 4", "origin_chamber": "C.Diputados"},
+    {"uid": "5", "title": "Title 5", "origin_chamber": "Senado"},
+    {"uid": "6", "title": "Title 6", "origin_chamber": "Senado"},
+    {"uid": "7", "title": "Title 7", "origin_chamber": "C.Diputados"},
+    {"uid": "8", "title": "Title 8", "origin_chamber": "Senado"},
+    {"uid": "9", "title": "Title 9", "origin_chamber": "Senado"},
+    {"uid": "10", "title": "Title 10", "origin_chamber": "C.Diputados"},
+    {"uid": "11", "title": "Title 11", "origin_chamber": "C.Diputados"},
+    {"uid": "12", "title": "Title 12", "origin_chamber": "Senado"},
+    {"uid": "13", "title": "Title 13", "origin_chamber": "Senado"},
+    {"uid": "14", "title": "Title 14", "origin_chamber": "C.Diputados"},
+    {"uid": "15", "title": "Title 15", "origin_chamber": "Senado"}
   ]}
 ]

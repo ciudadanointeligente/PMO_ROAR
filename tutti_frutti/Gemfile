@@ -38,3 +38,12 @@ group :test do
   gem 'rspec-rails'
   gem 'cucumber-rails', require: false
 end
+
+#Added by Marcel
+#gem "mongo"
+#gem "mongoid"
+gem 'sunspot_mongoid', :git => "git://github.com/jugyo/sunspot_mongoid.git"#, :branch => "master"
+gem 'sunspot_solr'
+#gem 'bson_ext'
+#gem 'tzinfo'
+#gem 'sunspot_mongo'

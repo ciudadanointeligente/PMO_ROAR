@@ -1,0 +1,17 @@
+#gems
+tutti_frutti/vendor/*
+smoothie_mixer/vendor/*
+#solr data
+tutti_frutti/solr/*
+smoothie_mixer/solr/*
+#logs
+tutti_frutti/log/*
+smoothie_mixer/log/*
+*.log
+#temp files
+tutti_frutti/tmp/*
+smoothie_mixer/tmp/*
+*.pid
+#conf files
+tutti_frutti/config/mongoid.yml
+tutti_frutti/config/sunspot.yml

@@ -6,9 +6,9 @@ module Orcharding
     include Roar::Representer::JSON::HAL
 
     #TODO can this be a one liner?
-    property :id
+    property :uid
     property :title
-    property :chamber
+    property :origin_chamber
 
     link :self do
       bill_url(self.id)

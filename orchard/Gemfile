@@ -2,3 +2,9 @@ source 'https://rubygems.org'
 
 # Specify your gem's dependencies in orchard.gemspec
 gemspec
+
+#Added by Marcel
+gem "mongo"
+gem "mongoid"
+gem 'sunspot_mongoid'
+gem 'sunspot_solr'

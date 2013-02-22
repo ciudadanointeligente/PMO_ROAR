@@ -56,6 +56,7 @@ TuttiFrutti::Application.routes.draw do
   match 'bills' => 'bills#index'
   #match 'bills/:id' => 'bills#show'
   match 'search' => 'bills#search'
+  match 'search/:q' => 'bills#search'
   match 'show/:id' => 'fruits#show'
 
   # See how all your routes lay out with "rake routes"

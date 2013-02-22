@@ -12,6 +12,10 @@
         %td= bill.origin_chamber
         %td
           = link_to t('.edit', :default => t("helpers.links.edit")), edit_bill_path(bill), :class => 'btn btn-mini'
+= form_tag("/search", :method => "get") do
+  = label_tag(:q, "Search for:")
+  = text_field_tag(:q)
+  = submit_tag("Search")
 /           = link_to t('.destroy', :default => t("helpers.links.destroy")), fruit_path(fruit), :method => :delete, :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')), :class => 'btn btn-mini btn-danger'
 
 / = link_to t('.new', :default => t("helpers.links.new")), new_fruit_path, :class => 'btn btn-primary'

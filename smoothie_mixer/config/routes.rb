@@ -54,6 +54,7 @@ SmoothieMixer::Application.routes.draw do
   root :to => 'fruits#index'
   match 'bills' => 'bills#index'
   match 'search' => 'bills#search'
+  match 'search/:q' => 'bills#search'
 
   # See how all your routes lay out with "rake routes"
 

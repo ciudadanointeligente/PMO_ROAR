@@ -1,6 +1,7 @@
 # encoding: utf-8
 module Orcharding
   require 'sunspot_mongoid'
+  require 'active_record'
   Mongoid.logger = nil
   
   class Bill
@@ -78,15 +79,18 @@ module Orcharding
 
     validates_presence_of :uid
     validates_uniqueness_of :uid
-    validates :matters, inclusion: { in: matters_valid_values }
-    validates :stage, inclusion: { in: stage_valid_values }
-    validates :origin_chamber, inclusion: { in: origin_chamber_valid_values }
-    validates :current_urgency, inclusion: { in: current_urgency_valid_values }
+    # validates :matters, inclusion: { in: matters_valid_values }
+    # validates :stage, inclusion: { in: stage_valid_values }
+    # validates :origin_chamber, inclusion: { in: origin_chamber_valid_values }
+    # validates :current_urgency, inclusion: { in: current_urgency_valid_values }
 
     # Relations
-    # embeds_many :events, :autosave => true
+    embeds_many :events
+    embeds_many :urgencies
+    embeds_many :reports
   #  add reference to tables (probably a table array)
-  #  belongs_to :table  
+  #  belongs_to :table
+    belongs_to :bill_group
 
     # Fields
     field :uid, :type => String ,:metadata => ['search'=>'text', 'display_name'=>'Boletin', 'link_to_detail'=>true, 'should_be_shown_in_list'=>true]
@@ -126,46 +130,61 @@ module Orcharding
       text :origin_chamber
       text :current_urgency
     end
-
-
-    #attr_accessor :uid, :title, :origin_chamber
-
-
-    # def initialize(params = {})
-    #   super(params)
-    #   from_hash params
-    # end
-
-    # def update(params = {})
-    #   from_hash params.reject {|param, value| [:id].include?(param)}
-    #   self.class.repository.update to_hash
-    # end
-
-    # class << self
-    #   def all
-    #     repository.all.map do |data|
-    #       new_from_hash data
-    #     end
-    #   end
-
-    #   def find_by_id(id)
-    #     new_from_hash repository.find_by_id(id)
-    #   end
-
-    #   def find_by_chamber(chamber)
-    #     repository.find_by_chamber(chamber).map do |data|
-    #       new_from_hash data
-    #     end
-    #   end
-
-    #   def create(data)
-    #     new_from_hash repository.create(data)
-    #   end
-
-    #   def destroy(id)
-    #     repository.destroy(id)
-    #   end
-    # end
-
   end
+
+  class Testbill < ActiveRecord::Base
+    attr_accessible :uid, :title
+  end
+
+  class Event
+    include Mongoid::Document
+    include Mongoid::Timestamps
+
+    # Relations
+    embedded_in :bill
+
+    # has_many :event_descriptions
+
+    # Fields
+    field :session, :type => String
+    field :date, :type => DateTime
+    field :description, :type => String
+    field :stage, :type => String
+    field :chamber, :type => String
+  end
+
+  class Urgency #Immediacy?
+    include Mongoid::Document
+    include Mongoid::Timestamps
+
+    # Relations
+    embedded_in :bill
+
+    # has_many :event_descriptions
+
+    # Fields
+    field :type, :type => String
+    field :entry_date, :type => DateTime
+    field :entry_message, :type => String
+    field :entry_chamber, :type => String
+    field :withdrawal_date, :type => DateTime
+    field :withdrawal_message, :type => String
+    field :withdrawal_chamber, :type => String
+  end
+
+  class Report
+    include Mongoid::Document
+    include Mongoid::Timestamps
+
+    # Relations
+    embedded_in :bill
+
+    # has_many :event_descriptions
+
+    # Fields
+    field :date, :type => DateTime
+    field :step, :type => String
+    field :stage, :type => String
+  end
+  
 end

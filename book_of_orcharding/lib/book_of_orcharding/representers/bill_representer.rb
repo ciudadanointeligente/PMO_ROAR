@@ -20,8 +20,13 @@ module Orcharding
     property :table_history
     property :link_law
 
+    property :events
+    property :urgencies
+    property :reports
+    # collection :events, :extend => EventRepresenter, :class => Event
+
     link :self do
-      bill_url(self.id)
+      bill_url(self.uid)
     end
   end
 end

@@ -8,3 +8,7 @@ gem "mongo"
 gem "mongoid"
 gem 'sunspot_mongoid'
 gem 'sunspot_solr'
+gem 'will_paginate_mongoid'
+gem 'activerecord'
+
+gem 'sqlite3'

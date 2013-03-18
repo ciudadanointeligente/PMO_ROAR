@@ -47,3 +47,6 @@ gem 'sunspot_solr'
 #gem 'bson_ext'
 #gem 'tzinfo'
 #gem 'sunspot_mongo'
+gem 'rest-client'
+
+gem 'will_paginate', '~> 3.0'

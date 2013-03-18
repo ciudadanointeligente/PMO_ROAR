@@ -13,10 +13,6 @@ class BillsController < ApplicationController
   end
 
   def search
-    puts '<params>'
-    puts params.has_key? 'q'
-    puts params.methods
-    puts '</params>'
     if params.has_key? 'q'
       @bills = Bills.get("http://localhost:9292/search/#{params[:q]}", 'application/json').bills || []
     else

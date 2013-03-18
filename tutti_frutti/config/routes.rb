@@ -54,10 +54,11 @@ TuttiFrutti::Application.routes.draw do
   root :to => 'fruits#index'
   match 'fruits' => 'fruits#index'
   match 'bills' => 'bills#index'
+  match 'bills_small' => 'bills#index_small'
   #match 'bills/:id' => 'bills#show'
   match 'search' => 'bills#search'
   match 'search/:q' => 'bills#search'
-  match 'show/:id' => 'fruits#show'
+  # match 'show/:id' => 'fruits#show'
 
   # See how all your routes lay out with "rake routes"
 

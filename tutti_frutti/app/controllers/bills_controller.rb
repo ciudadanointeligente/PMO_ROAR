@@ -56,10 +56,10 @@ class BillsController < ApplicationController
   end
 
   def search
-  	bill = Orcharding::Bill.new
-  	bill.uid = 1
-  	bill.title = 'ExampleTitle'
-  	bill.origin_chamber = 'Senado'
+  	# bill = Orcharding::Bill.new
+  	# bill.uid = 1
+  	# bill.title = 'ExampleTitle'
+  	# bill.origin_chamber = 'Senado'
     
     # search_for = params.to_s
     # Sunspot.remove_all(Orcharding::Bill)
@@ -73,8 +73,8 @@ class BillsController < ApplicationController
       # end
     end
     puts "<search>"
-    puts Orcharding::Bill.where(id: '511e6713d8ee064196df1ab1').first.class.name
-    puts search.hits.empty?
+    # puts Orcharding::Bill.where(id: '511e6713d8ee064196df1ab1').first.class.name
+    # puts search.hits.empty?
     bills = []
     if search.hits.empty?
       key = ''

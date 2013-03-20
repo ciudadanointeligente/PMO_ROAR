@@ -10,9 +10,9 @@ module Orcharding
     collection :bills, :extend => BillRepresenter, :class => Bill
 
     #opts[:bowl] == all by default
-    link :self do |opts|
-      bills_url(opts[:bills], :page => current_page)
-    end
+#    link :self do |opts|
+#      bills_url(opts[:bills], :page => current_page)
+#    end
  
   	# link :next do |opts|
    #    bills_url(opts[:bills], :page => next_page) \

@@ -4,5 +4,5 @@ Orcharding::Repositories.configure do |conf|
 end
 
 #Orcharding::Seeder.load_from_json File.read("db/bill_seed_data.json")
-# Orcharding::Seeder.load_from_json File.read("db/seed_data.json")
+Orcharding::Seeder.load_from_json File.read("db/seed_data.json")
 

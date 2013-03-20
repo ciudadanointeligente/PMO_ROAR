@@ -53,7 +53,7 @@ SmoothieMixer::Application.routes.draw do
   # just remember to delete public/index.html.
   root :to => 'fruits#index'
   # match 'bills' => 'bills#index'
-  # match 'search' => 'bills#search'
+  match 'search' => 'bills#search'
   # match 'search/:q' => 'bills#search'
 
   # See how all your routes lay out with "rake routes"

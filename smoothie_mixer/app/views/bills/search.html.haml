@@ -2,14 +2,22 @@
 %table.table.table-striped
   %thead
     %tr
+      %th= 'Bulletin'
       %th= 'Title'
-      %th= 'Chamber'
+      %th= 'Stage'
+      %th= 'Creation date'
+      %th= 'Publish date'
+      / %th= 'Chamber'
       %th=t '.actions', :default => t("helpers.actions")
   %tbody
     - @bills.each do |bill|
       %tr
+        %td= bill.uid
         %td= bill.title
-        %td= bill.origin_chamber
+        %td= 'Oli'
+        %td= bill.creation_date.gsub('T00:00:00+00:00', '')
+        %td= 'Otro oli'
+        / %td= bill.origin_chamber
         %td
           = link_to t('.edit', :default => t("helpers.links.edit")), edit_bill_path(bill), :class => 'btn btn-mini'
 = form_tag("/search", :method => "get") do

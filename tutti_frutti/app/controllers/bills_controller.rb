@@ -62,8 +62,8 @@ class BillsController < ApplicationController
   	# bill.origin_chamber = 'Senado'
     
     # search_for = params.to_s
-    # Sunspot.remove_all(Orcharding::Bill)
-    # Sunspot.index!(Orcharding::Bill.all)
+    #Sunspot.remove_all(Orcharding::Bill)   # descomentar para reindexar,
+    #Sunspot.index!(Orcharding::Bill.all)   # en caso de cambio en modelo
     
     search = Sunspot.search(Orcharding::Bill) do #.solr_search do
       fulltext params[:q]

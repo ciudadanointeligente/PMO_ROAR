@@ -12,10 +12,22 @@ describe BillsController do
       attrib['events'] = []
       attrib['urgencies'] = []
       attrib['reports'] = []
+      url = "http://localhost:9292/bills/#{bill.uid}"
+      attrib['_links'] = {"self" => {"href" => url}}
+
       bills_attrib.push attrib
     end
+    return bills_attrib
+  end
 
-    result = {"bills" => bills_attrib}.to_json
+  def format_single bill
+    bills_attrib = (format [bill]).first
+    return bills_attrib.to_json
+  end
+
+  def format_multiple bills
+    bills_attrib = format bills
+    return {"bills" => bills_attrib}.to_json
   end
 
 "{\"bills\":["\
@@ -71,69 +83,28 @@ describe BillsController do
   describe "show" do
     it "should return json for the requested bill" do
       get :show, id: '1', format: :json
-      response.body.should == "{\"uid\":\"1\",\"title\":\"Title 1\",\"origin_chamber\":\"Senado\","\
-      "\"events\":[],\"urgencies\":[],\"reports\":[],"\
-      "\"_links\":{\"self\":{\"href\":\"http://localhost:9292/bills/1\"}}}"
+      response.body.should == format_single(@bill1)
     end
   end
   describe "index" do
     it "should return json with a set of bills" do
       get :index, format: :json
-      puts '<response>'
-      puts response.body
-      puts '</response>'
-      response.body.should == "{\"bills\":["\
-      "{\"uid\":\"1\",\"title\":\"Title 1\",\"origin_chamber\":\"Senado\","\
-      "\"events\":[],\"urgencies\":[],\"reports\":[],"\
-      "\"_links\":{\"self\":{\"href\":\"http://localhost:9292/bills/1\"}}},"\
-      "{\"uid\":\"2\",\"title\":\"Title 2\",\"origin_chamber\":\"C.Diputados\","\
-      "\"events\":[],\"urgencies\":[],\"reports\":[],"\
-      "\"_links\":{\"self\":{\"href\":\"http://localhost:9292/bills/2\"}}},"\
-      "{\"uid\":\"3\",\"title\":\"Header 1\",\"origin_chamber\":\"Senado\","\
-      "\"events\":[],\"urgencies\":[],\"reports\":[],"\
-      "\"_links\":{\"self\":{\"href\":\"http://localhost:9292/bills/3\"}}},"\
-      "{\"uid\":\"4\",\"title\":\"Header 2\",\"origin_chamber\":\"C.Diputados\","\
-      "\"events\":[],\"urgencies\":[],\"reports\":[],"\
-      "\"_links\":{\"self\":{\"href\":\"http://localhost:9292/bills/4\"}}}"\
-      "]}"
+      response.body.should == format_multiple([@bill1, @bill2, @bill3, @bill4])
     end
 
     xit "should return a paginated result" do
       get :index, page: '2', per_page: '2', format: :json
-      puts '<response>'
-      puts response.body
-      puts '</response>'
-      response.body.should == "{\"bills\":["\
-      "{\"uid\":\"3\",\"title\":\"Header 1\",\"origin_chamber\":\"Senado\","\
-      "\"events\":[],\"urgencies\":[],\"reports\":[],"\
-      "\"_links\":{\"self\":{\"href\":\"http://localhost:9292/bills/3\"}}},"\
-      "{\"uid\":\"4\",\"title\":\"Header 2\",\"origin_chamber\":\"C.Diputados\","\
-      "\"events\":[],\"urgencies\":[],\"reports\":[],"\
-      "\"_links\":{\"self\":{\"href\":\"http://localhost:9292/bills/4\"}}}"\
-      "]}"
+      response.body.should == format_multiple([@bill3, @bill4])
     end
 
     it "should return simple queries filtered by title" do
-
-      puts '<format>'
-      puts format [@bill1]
-      puts '</format>'
-
       get :search, q: 'Title', format: :json
-      response.body.should == "{\"bills\":["\
-      "{\"uid\":\"1\",\"title\":\"Title 1\",\"origin_chamber\":\"Senado\","\
-      "\"events\":[],\"urgencies\":[],\"reports\":[],"\
-      "\"_links\":{\"self\":{\"href\":\"http://localhost:9292/bills/1\"}}},"\
-      "{\"uid\":\"2\",\"title\":\"Title 2\",\"origin_chamber\":\"C.Diputados\","\
-      "\"events\":[],\"urgencies\":[],\"reports\":[],"\
-      "\"_links\":{\"self\":{\"href\":\"http://localhost:9292/bills/2\"}}}"\
-      "]}"
-      # response.body.should == format [@bill1, @bill2]
+      response.body.should == format_multiple([@bill1, @bill2])
     end
 
-    xit "should return results filtered by origin chamber" do
-      response.body.should == format [@bill1, @bill2]
-
+    it "should return results filtered by origin chamber" do
+      get :search, origin_chamber: 'Senado', format: :json
+      response.body.should == format_multiple([@bill1, @bill3])
     end
   end
 

@@ -62,19 +62,21 @@ class BillsController < ApplicationController
   	# bill.origin_chamber = 'Senado'
     
     # search_for = params.to_s
-    #Sunspot.remove_all(Orcharding::Bill)   # descomentar para reindexar,
-    #Sunspot.index!(Orcharding::Bill.all)   # en caso de cambio en modelo
+    Sunspot.remove_all(Orcharding::Bill)   # descomentar para reindexar,
+    Sunspot.index!(Orcharding::Bill.all)   # en caso de cambio en modelo
     
-    search = Sunspot.search(Orcharding::Bill) do #.solr_search do
-      fulltext params[:q]
+    # search = Sunspot.search(Orcharding::Bill) do #.solr_search do
+    #   fulltext params[:q]
       # fulltext search
       # keywords 'Senate' do
       #   fields(:origin_chamber)
       # end
-    end
+    # end
     puts "<search>"
     # puts Orcharding::Bill.where(id: '511e6713d8ee064196df1ab1').first.class.name
     # puts search.hits.empty?
+    search = results_for({'q' => params[:q], 'origin_chamber' => params[:origin_chamber]})
+
     bills = []
     if search.hits.empty?
       key = ''
@@ -99,4 +101,71 @@ class BillsController < ApplicationController
     # respond_with Orcharding::Bill.where(id: key), represent_with: Orcharding::BillsRepresenter
     respond_with bills, represent_with: Orcharding::BillsRepresenter
   end
+
+
+
+  private
+
+  def filter_conditions(conditions)
+    filtered_conditions = {}
+
+    conditions.each do |key, value|
+  #     if !magic_fields.include?(key.to_sym) && (model.fields.include?(key) || special_searches.include?(key)) && !value.nil?() && value != ""
+        if !value.nil?() && value != ""
+          filtered_conditions[key] = value
+        end
+    end
+
+    filtered_conditions
+  end
+
+  # def solr_results_for(model, conditions, fields, order, pagination)
+  def results_for(conditions)
+
+    filtered_conditions = filter_conditions(conditions)
+    # search = model.solr_search do
+    search = Sunspot.search(Orcharding::Bill) do
+      # search over all fields
+      if filtered_conditions.key?("q")
+        fulltext conditions["q"]
+        filtered_conditions.delete("q")
+      #search over specific fields
+      end
+      filtered_conditions.each do |key, value|
+        p key.class.name
+        text_fields do
+          any_of do
+            value.split("|").each do |term|
+              with(key, term)
+            end
+          end
+        end
+      end
+      #write it nicer
+      # p order
+      # order_by order[0][0], order[0][1] unless order[0][0] == :_id
+      # paginate :page => pagination[:page], :per_page => pagination[:per_page]
+    end
+
+    search
+
+  #   key = model.to_s.underscore.pluralize
+  #   hits = search.hits
+  #   results = search.results
+  #   hits_array = search.hits.map {|bill| solr_attributes_for(bill.result, fields) unless bill.result.nil?}
+  # #  hits_array.delete_if {|bill| bill.nil?}
+
+  #   {
+  #     key => hits_array,
+  # #    key => search.each_hit_with_result {|bill| bill[0].result.attributes},
+  #     :count => search.total,
+  #     :page => {
+  #       :count => hits.count,
+  #       :per_page => pagination[:per_page],
+  #       :page => pagination[:page],
+  #       :total => hits.total_pages
+  #     }
+  #   }
+  end
+
 end

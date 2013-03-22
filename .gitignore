@@ -2,7 +2,8 @@
 tutti_frutti/vendor/*
 smoothie_mixer/vendor/*
 #solr data
-tutti_frutti/solr/*
+tutti_frutti/solr/data
+tutti_frutti/solr/pids
 smoothie_mixer/solr/*
 #logs
 tutti_frutti/log/*

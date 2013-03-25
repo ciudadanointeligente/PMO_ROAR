@@ -72,10 +72,10 @@ class BillsController < ApplicationController
       #   fields(:origin_chamber)
       # end
     # end
-    puts "<search>"
     # puts Orcharding::Bill.where(id: '511e6713d8ee064196df1ab1').first.class.name
     # puts search.hits.empty?
-    search = results_for({'q' => params[:q], 'origin_chamber' => params[:origin_chamber]})
+    filtered_conditions = filter_conditions(params)
+    search = results_for(filtered_conditions)
 
     bills = []
     if search.hits.empty?
@@ -90,7 +90,6 @@ class BillsController < ApplicationController
     #   puts result
     # end
       # puts result.body
-    puts "</search>"
     
     # results = ''
     # search.each_hit_with_result do |hit, post|
@@ -106,12 +105,17 @@ class BillsController < ApplicationController
 
   private
 
+
   def filter_conditions(conditions)
+    mongoid_attribute_names = ["_id", "created_at", "updated_at"] #Fix should probably have a greater scope
+    search_attribute_names = ["q"]
+
     filtered_conditions = {}
 
     conditions.each do |key, value|
   #     if !magic_fields.include?(key.to_sym) && (model.fields.include?(key) || special_searches.include?(key)) && !value.nil?() && value != ""
-        if !value.nil?() && value != ""
+        if !mongoid_attribute_names.include?(key) && !value.nil?() && value != ""\
+          && (Orcharding::Bill.attribute_names.include?(key) || search_attribute_names.include?(key))
           filtered_conditions[key] = value
         end
     end
@@ -123,6 +127,7 @@ class BillsController < ApplicationController
   def results_for(conditions)
 
     filtered_conditions = filter_conditions(conditions)
+
     # search = model.solr_search do
     search = Sunspot.search(Orcharding::Bill) do
       # search over all fields
@@ -132,14 +137,16 @@ class BillsController < ApplicationController
       #search over specific fields
       end
       filtered_conditions.each do |key, value|
-        p key.class.name
-        text_fields do
-          any_of do
-            value.split("|").each do |term|
-              with(key, term)
-            end
-          end
+        fulltext value do
+          fields(key)
         end
+        # text_fields do
+          # any_of do
+            # value.split("|").each do |term|
+              # with(key, term)
+            # end
+          # end
+        # end
       end
       #write it nicer
       # p order

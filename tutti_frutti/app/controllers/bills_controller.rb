@@ -128,7 +128,6 @@ class BillsController < ApplicationController
 
     filtered_conditions = filter_conditions(conditions)
 
-    # search = model.solr_search do
     search = Sunspot.search(Orcharding::Bill) do
       # search over all fields
       if filtered_conditions.key?("q")
@@ -136,22 +135,18 @@ class BillsController < ApplicationController
         filtered_conditions.delete("q")
       #search over specific fields
       end
-      filtered_conditions.each do |key, value|
-        fulltext value do
-          fields(key)
+      text_fields do
+        all_of do
+          filtered_conditions.each do |key, value|
+            any_of do
+              value.split("|").each do |term|
+                with(key, term)
+              end
+            end
+          end
         end
-        # text_fields do
-          # any_of do
-            # value.split("|").each do |term|
-              # with(key, term)
-            # end
-          # end
-        # end
       end
-      #write it nicer
-      # p order
-      # order_by order[0][0], order[0][1] unless order[0][0] == :_id
-      # paginate :page => pagination[:page], :per_page => pagination[:per_page]
+      
     end
 
     search

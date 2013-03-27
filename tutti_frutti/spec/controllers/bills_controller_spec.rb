@@ -44,12 +44,12 @@ describe BillsController do
     @bill3 = Orcharding::Bill.new({uid: '3', title: 'Header 1', summary: 'Summary 3',\
       tags: ['tag 1', 'tag 2'], matters: ['matter 1', 'matter 2'], stage: 'Archivado',\
       # creation_date: '2010-12-01T00:00:00Z', publish_date: '2010-12-01T00:00:00Z',\
-      authors: ['author 1', 'author 2'], origin_chamber: 'Senado', current_urgency: 'Simple'})
+      authors: ['author 1', 'author 2'], origin_chamber: 'Senado', current_urgency: 'Suma'})
     @bill3.save()
     @bill4 = Orcharding::Bill.new({uid: '4', title: 'Header 2', summary: 'Summary 4',\
       tags: ['tag 1', 'tag 2'], matters: ['matter 1', 'matter 2'], stage: 'Archivado',\
       # creation_date: '2010-12-01T00:00:00Z', publish_date: '2010-12-01T00:00:00Z',\
-      authors: ['author 1', 'author 2'], origin_chamber: 'C.Diputados', current_urgency: 'Simple'})
+      authors: ['author 1', 'author 2'], origin_chamber: 'C.Diputados', current_urgency: 'Suma'})
     @bill4.save()
 
     Sunspot.remove_all(Orcharding::Bill)
@@ -123,6 +123,10 @@ describe BillsController do
       response.body.should == format_multiple([])
     end
 
+    it "should search with disjunctions (or)" do
+      get :search, origin_chamber: 'C.Diputados|Senado', current_urgency: 'Suma', format: :json
+      response.body.should == format_multiple([@bill3,@bill4])
+    end
   end
 
 end

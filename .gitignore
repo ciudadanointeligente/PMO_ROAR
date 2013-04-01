@@ -9,7 +9,6 @@ smoothie_mixer/solr/*
 tutti_frutti/log/*
 smoothie_mixer/log/*
 *.log
-*.lock
 #temp files
 tutti_frutti/tmp/*
 smoothie_mixer/tmp/*
